@@ -8,7 +8,7 @@ body{
     font-family: "Hanken Grotesk", sans-serif;
 }
 .result{
-    background: linear-gradient(#6743FF, #583CF8, #4433F1, #332DE9);
+    background: linear-gradient(#6743FF, #583CF8,#4636F1, #4433F1, #332DE9);
     color: #C5B7FF;
     border-radius: 0 0 2rem 2rem;
     width: 100%;
@@ -22,7 +22,7 @@ body{
     margin: 0.5rem 0;
 }
 .level{
-    background: linear-gradient(#4B23CB, #4828D4, #462DDE,#4431E5, #4532EC);
+    background: linear-gradient(#4B23CB, #4828D4, #462DDE,#4431E5, #4532EC, #4734F0, #4636F1);
     font-size: 1.5rem;
     font-weight: 700;
     margin: 1rem auto;
@@ -30,7 +30,7 @@ body{
     height: 38%;
     border-radius: 50%;
     padding: 1rem;
-    box-shadow: 2px 1px 20px #6868f5;
+    /* box-shadow: -10px 10px 25px #6868f5; */
 }
 .summary{
     padding: 2rem;
@@ -53,46 +53,72 @@ body{
     padding: 0.5rem;
 }
 .score-mark{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
     color: #FFFFFF;
 }
 .score-total{
     font-size: 0.9rem;
     font-weight: 700;
-    margin-top: 0.5rem;
+    margin-top: 0.1rem;
+    color: #877DFD;
 }
-.summary1{
+.rating1{
     display: flex;
     background-color: #FFF6F5;
     color: #E67F85;
     border-radius: 1rem;
     padding: 1rem;
-    margin: 1rem auto;   
+    margin: 1rem auto;  
+    align-items: center;
+    justify-content: space-between;
 }
-.summary2{
+.rating-action {
+    font-size: 1.1rem;
+    font-weight: 700;
+    /* margin-left: -2.5rem ; */
+}
+.total{
+    
+    font-size: 1rem;
+    font-weight: 700;
+    color: #9D98A1;
+    
+} 
+.total span{
+    font-size: 1.1rem;
+    color: #4B495A;
+    font-weight: 800;
+}
+.rating2{
     display: flex;
     background-color: #FFFBF2;
     color: #EDC271;
     border-radius: 1rem;
     padding: 1rem;
-    margin: 1rem auto; 
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: space-between; 
 }
-.summary3{
+.rating3{
     display: flex;
     background-color: #F2FBFA;
     color: #44B497;
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem auto; 
+    align-items: center;
+    justify-content: space-between;
 }
-.summary4{
+.rating4{
     display: flex;
     background-color: #F3F3FD;
     color: #4B4C95;
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem auto; 
+    align-items: center;
+    justify-content: space-between;
 }
 button{
     background-color: #303B58;
@@ -104,4 +130,36 @@ button{
     font-size: 1.1rem;
     font-weight: 700;
     margin: 0.5rem auto;
+}
+button:hover{
+    background-color: #384465;
+}
+
+@media (min-width: 452px) and (max-width: 940px) {
+    body{
+        padding: 2rem;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .result{
+        border-radius: 2rem;
+        width: 300px;
+        height: 420px;
+       
+    }
+    .summary{
+        margin-left: -2rem;
+        box-shadow: 10px 10px 25px #E7EDFB;
+        border-radius: 0 2rem 2rem 0;
+        width: 300px;
+        height: 420px;
+        z-index: -1;
+        padding-left: 3rem;
+    }
+    button{
+        font-size: 0.8rem;
+    }
 }
