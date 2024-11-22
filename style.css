@@ -132,10 +132,11 @@ button{
     margin: 0.5rem auto;
 }
 button:hover{
-    background-color: #384465;
+    background-color: #485371;
+    cursor: pointer;
 }
 
-@media (min-width: 452px) and (max-width: 940px) {
+@media (min-width: 452px) and (max-width: 2100px) {
     body{
         padding: 2rem;
     }
@@ -143,6 +144,7 @@ button:hover{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0rem auto;
     }
     .result{
         border-radius: 2rem;
@@ -161,5 +163,41 @@ button:hover{
     }
     button{
         font-size: 0.8rem;
+    }
+    button:hover{
+        background-color: #485371;
+        cursor: pointer;
+    }
+}
+@media (min-width: 941px) and (max-width: 2100px) {
+    body{
+        padding: 10rem;
+    }
+    .result h1{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    .result{
+        padding: 2rem;
+        width: 350px;
+        height: 460px;
+    }
+    .level{
+        padding: 1.5rem;
+        width: 50%;
+        height: 38%;
+    }
+    .summary{
+        width: 350px;
+        height: 460px;
+        padding-left: 4rem;
+    }
+    .score-detail{
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+    button:hover{
+        background-color: #485371;
+        cursor: pointer;
     }
 }
