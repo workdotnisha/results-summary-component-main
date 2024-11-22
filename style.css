@@ -203,35 +203,3 @@ button:hover{
         margin-bottom: 0rem;
     }
 }
-/* @media (max-width: 941px) and (min-width: 1500px) {
-    body{
-        padding: 10rem;
-    }
-    .result h1{
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-    }
-    .result{
-        padding: 2rem;
-        width: 350px;
-        height: 460px;
-    }
-    .level{
-        padding: 1.5rem;
-        width: 50%;
-        height: 38%;
-    }
-    .summary{
-        width: 350px;
-        height: 460px;
-        padding-left: 4rem;
-    }
-    .score-detail{
-        font-size: 1rem;
-        margin-bottom: 0rem;
-    }
-    button:hover{
-        background-color: #485371;
-        cursor: pointer;
-    }
-} */
