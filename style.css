@@ -7,6 +7,10 @@
 body{
     font-family: "Hanken Grotesk", sans-serif;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+}
 .result{
     background: linear-gradient(#6743FF, #583CF8,#4636F1, #4433F1, #332DE9);
     color: #C5B7FF;
@@ -136,12 +140,13 @@ button:hover{
     cursor: pointer;
 }
 
-@media (min-width: 452px) and (max-width: 2100px) {
+@media (min-width: 556px){
     body{
         padding: 2rem;
     }
     .main{
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         margin: 0rem auto;
@@ -151,6 +156,11 @@ button:hover{
         width: 300px;
         height: 420px;
        
+    }
+    .level{
+        padding: 1.2rem;
+        width: 45%;
+        height: 30%;
     }
     .summary{
         margin-left: -2rem;
@@ -164,12 +174,36 @@ button:hover{
     button{
         font-size: 0.8rem;
     }
-    button:hover{
-        background-color: #485371;
-        cursor: pointer;
+}
+@media (min-width:941px){
+    body{
+        padding: 12rem;
+    }
+    .result h1{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    .result{
+        padding: 2rem;
+        width: 350px;
+        height: 460px;
+    }
+    .level{
+        padding: 1.5rem;
+        width: 50%;
+        height: 38%;
+    }
+    .summary{
+        width: 350px;
+        height: 460px;
+        padding-left: 4rem;
+    }
+    .score-detail{
+        font-size: 1rem;
+        margin-bottom: 0rem;
     }
 }
-@media (min-width: 941px) and (max-width: 2100px) {
+/* @media (max-width: 941px) and (min-width: 1500px) {
     body{
         padding: 10rem;
     }
@@ -200,4 +234,4 @@ button:hover{
         background-color: #485371;
         cursor: pointer;
     }
-}
+} */
